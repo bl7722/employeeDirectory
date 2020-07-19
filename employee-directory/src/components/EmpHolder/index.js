@@ -52,8 +52,13 @@ render(){
     return(
         <>
         <Header
+        reset = {this.emps}
+        search={this.state.search}
+        handleFormSubmit={this.handleFormSubmit}
+        handleInputChange={this.handleInputChange}
         />
-        
+        <br/>
+        <br/>
         <Container>
             {epmsList}
         </Container>
