@@ -7,4 +7,4 @@ function Container(props) {
     </div>);
   }
 
-export default Container
+export default Container;
