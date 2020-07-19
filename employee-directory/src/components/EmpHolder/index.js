@@ -20,7 +20,23 @@ class EmpHolder extends Component {
         .catch(err => console.log(err));
   };
 
-  
+  searchEmps = query => {
+        let filter = this.state.result.filter(employee => employee.name.first.includes(query)||employee.name.last.includes(query))
+        this.setState({result:filter})
+  };
+
+  handleInputChange  = event => {
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    this.searchEmps(this.state.search)
+  };
     
 render(){
    let epmsList;

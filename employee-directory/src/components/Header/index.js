@@ -2,8 +2,8 @@ import React from "react";
 
 function Header(props) {
   return (
-<div class="container">
-  <navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div className="container">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <a className="navbar-brand" href="#">Employee Directory</a>
     <form className="form-inline">
       <input 
@@ -30,7 +30,7 @@ function Header(props) {
       </button>
     
     </form>
-  </navbar>
+  </nav>
 </div>
   );
 }
